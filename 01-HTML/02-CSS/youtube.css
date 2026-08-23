@@ -1,0 +1,37 @@
+.t1,.t2{
+    margin-top: 100px;
+    text-align: center;
+    display: block; 
+    width: 400px;
+    border-radius: 15px;
+}
+
+.big,.view{
+    font-family: Arial;
+    display: inline-block;
+}
+
+.cname{
+    font-family: Arial;
+}
+
+.search-bar{
+    display: block;
+    font-size: 20px;
+    width: 500px;
+    border-radius: 200px;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /* font-weight: bold; */
+}
+
+.demo,.sdemo{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}

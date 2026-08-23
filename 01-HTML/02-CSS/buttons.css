@@ -1,0 +1,164 @@
+.Subscribe_button{
+    background-color: rgb(200, 0, 0);
+    border: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+
+    /* height: 36px;
+    width: 100px; */
+
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+
+    /* Used To Align the button to top instead of Text
+    vertical-align: top; */
+    
+}
+
+.Subscribe_button:hover{
+    opacity: 0.8;
+}
+
+.Subscribe_button:active{
+    opacity: 0.5;
+}
+
+.Join_button{
+    background-color: white;
+    color: rgb(41, 118, 211);
+    border-radius: 2px;
+    border-color: rgb(41, 118, 211);
+    border-width: 1px;
+
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+
+    /*height: 36px;
+    width: 50px; */
+
+    cursor: pointer;
+    border-style: solid;
+    margin-right: 8px;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.Join_button:hover{
+    background-color: rgb(41, 118, 211);
+    color: white;
+}
+
+.Join_button:active{
+    opacity: 0.5;
+}
+
+.Twitwer_button{
+    color: white;
+    background-color: rgb(2, 158, 255);
+    border-radius: 18px;
+    height: 36px;
+    width: 74px;
+    border-width: 1px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: box-shadow 0.15s;
+}
+
+.Twitwer_button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.model{
+    font-family: "Montserrat";
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 10px;
+}
+
+.order{
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 30px;
+}
+
+.touch{
+    text-decoration: underline;
+    font-weight: 530;
+}
+
+.email{
+    font-family: Arial;
+    color: grey;
+    line-height: 5px;
+    font-size: 22px;
+}
+
+.mail{
+    width: 430px;
+    font-size: 22px;
+    border-width: 2px;
+    border-style: solid;
+    padding-left: 12px;
+    border-radius: 5px;
+}
+
+.agree{
+    font-family: Arial;
+    font-size: 18px;
+    color: rgb(71, 68, 68);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.jon{
+    background-color: rgb(31, 95, 199);
+    font-size: 22px;
+    color: white;
+    border-style: solid;
+    border-width: none;
+    border-radius: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 170px;
+    padding-right: 170px;
+}
+
+.first, .last, .mall, .sign{
+    font-size: 20px;
+    line-height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.first, .last{
+    margin-top: 100px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.mall{
+    width: 310px;
+    margin-bottom: 10px;
+}
+
+.sign{
+    border-radius: 10px;
+    font-size: 22px;
+    color: white;
+    background-color: rgb(31, 95, 199);
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
