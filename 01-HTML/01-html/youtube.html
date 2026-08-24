@@ -3,6 +3,13 @@
 
     <head>
         <title>Youtube Clone</title>
+
+        <link rel="preconnect" href="https://googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+
+
         <!-- <link rel="stylesheet" href="/02-CSS/youtube.css"> -->
         <!-- <link rel="stylesheet" href="../../02-CSS/youtube.css"> -->
         <link rel = "stylesheet" href = "../02-CSS/youtube.css">
@@ -12,17 +19,37 @@
 
         <input class = "search-bar" type = "text" placeholder = "Search">
         <div class = "demo">
-            <img class = "t1" src = "../03-thumbnails/t1.avif">
-            <p class = "big" >Big Boss entry? | Zayn Saifi</p>
-            <p class = "cname" >Zayn Saifi</p>
-            <p class = "view" >1.5M views &#183; 1 day ago.</p>
+            <div class = "t_row">
+                <img class = "t1" src = "../03-thumbnails/t1.avif">
+            </div>
+            <div>
+                <div class = "channel_pic">
+                    <img class = "work" src = "../04-profile_picture/p1.jpg">
+                </div>
+                <div class = "video_info">
+                    <p class = "big" >Big Boss entry? | Zayn Saifi</p>
+                    <p class = "cname" >Zayn Saifi</p>
+                    <p class = "view" >1.5M views &#183; 1 day ago.</p>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class = "sdemo">
-            <img class = "t2" src = "../03-thumbnails/t2.avif">
-            <p class = "big">I Got Hunted By 100 Real Cops.</p>
-            <p class = "cname">MrBeast</p>
-            <p class = "view">27M views &#183; 23 hours ago</p>
-        </div>
+         <div class = "demo">
+            <div class = "t_row">
+                <img class = "t1" src = "../03-thumbnails/t2.avif">
+            </div>
+            <div>
+                <div class = "channel_pic">
+                    <img class = "work" src = "../04-profile_picture/p2.jpg">
+                </div>
+                <div class = "video_info">
+                    <p class = "big" >I Got Hunted By 100 Real Cops</p>
+                    <p class = "cname" >MrBeast</p>
+                    <p class = "view" >43M views &#183; 2 day ago.</p>
+                </div>
+
+            </div>
     </body>
 </html>

@@ -1,3 +1,8 @@
+.p{
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
 .t1,.t2{
     margin-top: 100px;
     text-align: center;
@@ -7,12 +12,21 @@
 }
 
 .big,.view{
-    font-family: Arial;
     display: inline-block;
 }
 
-.cname{
-    font-family: Arial;
+.big{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.cname, .view{
+    font-size: 15px;
+    color: rgb(96, 96, 96);
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 .search-bar{
@@ -29,9 +43,33 @@
     /* font-weight: bold; */
 }
 
-.demo,.sdemo{
+.demo{
     width: 400px;
     display: inline-block;
     vertical-align: top;
     margin-right: 15px;
+}
+
+.channel_pic{
+    display: inline-block;
+    width: 50px;
+    margin-left: 10px;
+    vertical-align: top;
+    /* padding-bottom: 300px; */
+}
+
+.video_info{
+    display: inline-block;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.work{
+    width: 100%;
+    border-radius: 25px;
+    /* margin-bottom: 80px; */
+}
+
+.t_row{
+    margin-bottom: 12px;
 }
