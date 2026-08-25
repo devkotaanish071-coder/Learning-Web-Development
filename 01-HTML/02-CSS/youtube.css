@@ -3,11 +3,12 @@
     font-weight: 700;
 }
 
-.t1,.t2{
-    margin-top: 100px;
+.t1{
+    margin-top: 25px;
     text-align: center;
     display: block; 
-    width: 400px;
+    width: 100%;
+    /* width: 400px; */
     border-radius: 15px;
 }
 
@@ -43,33 +44,26 @@
     /* font-weight: bold; */
 }
 
-.demo{
-    width: 400px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 15px;
-}
-
-.channel_pic{
-    display: inline-block;
-    width: 50px;
-    margin-left: 10px;
-    vertical-align: top;
-    /* padding-bottom: 300px; */
-}
-
 .video_info{
-    display: inline-block;
-    width: 300px;
     margin-left: 10px;
+}
+
+.video_info_grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
 }
 
 .work{
     width: 100%;
     border-radius: 25px;
-    /* margin-bottom: 80px; */
 }
 
 .t_row{
     margin-bottom: 12px;
+}
+
+.main_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
 }
