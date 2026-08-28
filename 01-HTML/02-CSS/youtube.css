@@ -77,14 +77,27 @@
 .left-section{
     background-color: lightblue;
     width: 200px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.Hamburger{
+    width: 50px;
+    margin-right: 20px;
+}
+
+.Youtube{
+    width: 120px;
 }
 
 .middle-section{
     background-color: lightpink;
     flex: 1;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     margin-right: 60px;
     max-width: 400px;
+    /* padding-left: 30px; */
 }
 
 .right-section{
