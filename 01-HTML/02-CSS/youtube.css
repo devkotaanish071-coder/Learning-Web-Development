@@ -30,20 +30,6 @@
     margin-bottom: 0px;
 }
 
-/* .search-bar{
-    font-size: 20px;
-    width: 500px;
-    border-radius: 200px;
-    border-style: solid;
-    border-width: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-} */
-
-/* font-weight: bold; */
-
 .video_info{
     margin-left: 10px;
 }
@@ -71,11 +57,12 @@
 .header{
     /* height: 40px; */
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
 }
 
 .left-section{
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: 200px;
     display: flex;
     align-items: center;
@@ -84,25 +71,69 @@
 
 .Hamburger{
     width: 50px;
-    margin-right: 20px;
 }
 
 .Youtube{
-    width: 120px;
+    width: 150px;
 }
 
 .middle-section{
-    background-color: lightpink;
-    flex: 1;
-    /* margin-left: 100px; */
+    margin-left: 100px;
+    width: 400px;
     margin-right: 60px;
-    max-width: 400px;
-    /* padding-left: 30px; */
+}
+
+.mwork{
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 53px;
+    width: 0px;
+    margin-right: 69px;
+    width: 0px;
+}
+
+.sear, .mic{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mic:hover{
+    
+}
+
+.awork{
+    display: inline-table;
+    height: auto;
+}
+
+.Search{
+    /* margin-top: 20px; */
+    width: 50px;
+}
+
+.Mice{
+    margin-top: 10px;
+    width: 70px;
+}
+
+.search-bar{
+    display: inline-block;
+    font-size: 16px;
+    width: 560px;
+    border-radius: 200px;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .right-section{
+    /* margin-left: 50px; */
     background-color: lightblue;
-    width: 250px;
+    width: 50px;
 }
 
 
