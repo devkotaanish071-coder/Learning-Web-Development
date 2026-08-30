@@ -46,6 +46,7 @@
 
 .t_row{
     margin-bottom: 12px;
+    position: relative;
 }
 
 .main_grid{
@@ -58,19 +59,75 @@
     /* height: 40px; */
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10;
     /* justify-content: space-between; */
 }
 
+.sidebar{
+    background-color: white;
+    position: fixed;
+    left: 5px;
+    bottom: 0;
+    top: 70px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.home{
+    /* background-color: lightcyan; */
+    height: 65px;
+    margin-bottom: 3px;
+}
+
+.home:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+.hom, .shr{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 25px;
+    margin-bottom: 3px;
+}
+
+.texa{
+    font-family: Arial;
+    font-size: 10px;
+    text-align: center;
+    gap: 10px;
+}
+
+.subs{
+    margin-left: -5px;
+    width: 65px;
+}
+
+.u{
+    margin-left: 0px;
+    width: 60px;
+}
+
 .left-section{
-    /* background-color: lightblue; */
     width: 200px;
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .Hamburger{
     width: 50px;
+}
+
+.Hamburger:hover{
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
 }
 
 .Youtube{
@@ -98,8 +155,11 @@
     cursor: pointer;
 }
 
-.mic:hover{
-    
+.mic{
+    border-width: 1px;
+    width: 30px;
+    margin-right: 50px;
+    position: relative; 
 }
 
 .awork{
@@ -108,7 +168,6 @@
 }
 
 .Search{
-    /* margin-top: 20px; */
     width: 50px;
 }
 
@@ -128,15 +187,82 @@
     padding-right: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
+    /* position: relative; */
 }
 
 .right-section{
-    /* margin-left: 50px; */
-    background-color: lightblue;
-    width: 50px;
+    margin-left: 50px;
+    /* background-color: lightblue; */
+    width: 300px;
 }
 
+.Create{
+    cursor: pointer;
+    margin-left: -35px;
+    border: none;
+    background-color: transparent;
+}
+
+.crt{
+    margin-top: 10px;
+    border-radius: 80px;
+    width: 130px;
+}
+
+.Bell, .Pic{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.Bell{
+    position: relative;
+}
+
+.noti{
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    background-color: red;
+    color: white;
+    font-family: Arial;
+    font-size: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 100px;
+}
+
+.bel{
+    margin-left: -20px;
+    width: 45px;
+    margin-bottom: 7px;
+}
+
+.pi{
+    margin-left: -20px;
+    margin-bottom: 10px;
+    width: 105px;
+}
 
 body{
     margin: 0;
+    padding-top: 90px;
+    padding-left: 96px;
+    padding-right: 20px;
+    height: 2000px;
+    background-color: rgb(248, 248, 248);
+}
+
+.video-time{
+    padding: 2px;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 12px;
+    background-color: rgb(66, 63, 63);
+    color: white;
+    position:  absolute;
+    bottom: 10px;
+    right: 7px;
 }
