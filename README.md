@@ -19,9 +19,11 @@ The project follows a modular directory layout:
 
 ```text
 ├── 01-HTML/
-│   └── index.html             # Main HTML markup for the YouTube clone
+│
 ├── 02-CSS/
 │   └── youtube.css            # Stylesheets for layout, grid, and typography
 ├── 03-thumbnails/             # Video thumbnail assets (t1.avif, t2.avif, etc.)
 ├── 04-profile_picture/        # Channel avatar images (p1.jpg, p2.jpg, etc.)
 └── 05-icons/                  # UI icon assets (Home.svg, Bell.png, Search.png, etc.)
+
+index.html           # Main HTML markup for the YouTube clone
