@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booleans</title>
+    </head>
+
+    <body>
+        <script>
+
+            // Learning Boolean 
+            console.log(5 > 3);
+            console.log(5 == '5');
+            console.log( 5 === '5');
+
+
+            // Learning If else
+            if(true){
+                console.log('Hello World');
+            }
+
+            // Finding Age Limit can Drive or Not
+            var age = 20;
+            if(age >= 16){
+                console.log('You can Drive.');
+            }else{
+                console.log('You can\'t drive');
+            }
+
+            // Learning Trythy And Falsy Values
+            const cartQuantity = 5;
+            if(cartQuantity){
+                console.log(`Cart is Loaded.`);
+            }
+
+            // Falsy Values
+            // False Type
+            console.log(!0);
+
+            // Zero(0) Type
+            const cart = 0;
+            if(cart){
+                console.log(`Cart is Empty.`);
+            }
+
+            // NaN type
+            console.log(`text` / 5);
+
+
+            // Ternary Operator
+            const result = 0 ? 'truthy' : 'falsy';
+            console.log(result);
+
+            // Guard Operator
+            false && console.log('hi');
+
+            const message = 5 && `nothing`;
+            console.log(message);
+
+            // Default Operator
+            const currency = `EUR` || `USD`;
+            console.log(currency);
+
+        </script>
+    </body>
+</html>
