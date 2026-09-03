@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissor Game</title>
+    </head>
+    <body>
+
+        <p>Rock Paper Scissors</p>
+        
+        <button onclick = "
+            const randomNumber_01 = Math.floor(Math.random()*3);
+            let computerMove_01 = ''; 
+            if(randomNumber_01 == 0){
+                computerMove_01 = 'Rock';
+            }else if(randomNumber_01 == 1){
+                computerMove_01 = 'Paper';
+            }else if(randomNumber_01 == 2){
+                computerMove_01 = 'Scissor';
+            }
+            
+            console.log(computerMove_01);
+            let result_01 = '';
+
+            if(computerMove_01 === 'Rock'){
+                result_01 = 'TIE';
+            }else if(computerMove_01 ==='Paper'){
+                result_01 = 'You Lose';
+            }else if(computerMove_01 === 'Scissor'){
+                result_01 = 'You Won';
+            }
+
+            
+            alert(`You Picked Rock. Computer Picked ${computerMove_01}. ${result_01}.`);
+            ">Rock
+        </button>
+
+        <button onclick = "
+            const randomNumber_02 = Math.floor(Math.random()*3);
+            let computerMove_02 = ''; 
+            if(randomNumber_02 == 0){
+                computerMove_02 = 'Rock';
+            }else if(randomNumber_02 == 1){
+                computerMove_02 = 'Paper';
+            }else if(randomNumber_02 == 2){
+                computerMove_02 = 'Scissor';
+            }
+            
+            console.log(computerMove_02);
+            let result_02 = '';
+
+            if(computerMove_02 === 'Rock'){
+                result_02 = 'You Win.';
+            }else if(computerMove_02 ==='Paper'){
+                result_02 = 'Tie';
+            }else if(computerMove_02 === 'Scissor'){
+                result_02 = 'You Lose.';
+            }
+
+            
+            alert(`You Picked Paper. Computer Picked ${computerMove_02}. ${result_02}.`);
+            ">Paper
+        </button>
+
+        <button onclick = "
+            const randomNumber = Math.floor(Math.random()*3);
+            let computerMove = ''; 
+            if(randomNumber == 0){
+                computerMove = 'Rock';
+            }else if(randomNumber == 1){
+                computerMove = 'Paper';
+            }else if(randomNumber == 2){
+                computerMove = 'Scissor';
+            }
+            
+            console.log(computerMove);
+            let result = '';
+
+            if(computerMove === 'Rock'){
+                result = 'You Lose.';
+            }else if(computerMove ==='Paper'){
+                result = 'You Won.';
+            }else if(computerMove === 'Scissor'){
+                result = 'Tie.';
+            }
+
+            
+            alert(`You Picked Scissor. Computer Picked ${computerMove}. ${result}.`);
+            ">Scissors
+        </button>
+
+        <script>
+
+
+
+        </script>
+
+    </body>
+</html>
