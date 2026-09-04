@@ -5,22 +5,89 @@
     </head>
     <body>
         <script>
-            const product = {
-                name : 'Boots',
-                price : 1000
+            // const product = {
+            //     name : 'Boots',
+            //     price : 1000
+            // };
+            // console.log(product);
+            // console.log(product.name);
+            // console.log(product.price);
+
+            // product.name = 'Leather Boots';
+            // console.log(product);
+
+            // product.size = 10;
+            // console.log(product);
+
+            // delete product.price;
+            // console.log(product);
+
+            
+            /*const product2 = {
+                name: 'shirt',
+                age: 24,
+                [`delivery-time`]: 'two day',
+                rating: {
+                    stars: 4.5,
+                    count: 187
+                },
+                work: function demo_function(){
+                    console.log(`This is a Function inside Object`);
+                }
             };
-            console.log(product);
-            console.log(product.name);
-            console.log(product.price);
+            console.log(product2);
+            console.log(product2.name);
+            console.log(product2['delivery-time']);
+            console.log(product2['age']);
+            console.log(product2.rating.stars);
+            product2.work();
 
-            product.name = 'Leather Boots';
-            console.log(product);
+            // Making JS Object to JSON
+            console.log(JSON.stringify(product2));
 
-            product.size = 10;
-            console.log(product);
+            // Making JSON Back to JS Object
+            const string = JSON.stringify(product2);
+            console.log(JSON.parse(string));
+            */
 
-            delete product.price;
-            console.log(product);
+            console.log('hello'.length);
+            console.log('hello'.toUpperCase());
+
+            const object1 = {
+                message: 'hello'
+            };
+            console.log(object1);
+
+            object1.message = 'Help Me';
+            const object2 = object1;
+            console.log(object2);
+
+            const object3 = {
+                message: 'Help Me'
+            };
+
+            console.log(object3.message === object1.message);
+            console.log(object2 === object1);
+
+            const object4 = {
+                message: 'West',
+                price: 799
+            };
+            const {message, price} = object4;
+            console.log(message, price); 
+
+            const object5 = {
+                // message: message
+                message,
+                // method: function function1(){
+                //     console.log('method');
+                // }
+                method(){
+                    console.log('method');
+                }
+            };
+            console.log(object5);
+            object5.method();
         </script>
     </body>
 </html>
