@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Heads Tail Game</title>
+    </head>
+    <body>
+
+        <button onclick = "
+            game('head');
+        ">Head</button>
+
+        <button onclick="
+            game('tail');
+        ">Tails</button>
+
+        <button onclick = "
+            score.win = 0
+            score.loose = 0;
+            localStorage.removeItem('score');
+        ">Reset Button</button>
+
+        <script>
+
+            const score = JSON.parse(localStorage.getItem('score')) || {
+                win: 0,
+                loose: 0
+            };
+            
+            // JSON.parse(localStorage.getItem('score'));
+
+            function pickcomputerMove(){
+                const Move = Math.floor(Math.random() * 2);
+                let computerMove = '';
+
+                if(Move === 0){
+                    computerMove = 'head';
+                }else if(Move === 1){
+                    computerMove = 'tail';
+                }
+                return computerMove;
+            }
+
+            function game(playerMove){
+                const computerMove = pickcomputerMove();
+                let result = '';
+                if(playerMove === 'head'){
+                    if(computerMove === 'head'){
+                        result = 'You Guessed Correct.';
+                    }else{
+                        result = 'You Guessed Wrong.';
+                    }
+                } 
+                else if(playerMove === 'tail'){
+                    if(computerMove === 'head'){
+                        result = 'You Guessed Wrong.';
+                    }else{
+                        result = 'You Guessed Correct.';
+                    }
+                }
+
+                if(result === 'You Guessed Correct.'){
+                    score.win++;
+                }else{
+                    score.loose++;
+                }
+
+                localStorage.setItem('score', JSON.stringify(score));
+
+                alert(`You Choose ${playerMove}. The Coin Fliped ${computerMove}. ${result}
+Win: ${score.win}, Losses: ${score.loose}`);
+            }
+        </script>
+    </body>
+</html>
