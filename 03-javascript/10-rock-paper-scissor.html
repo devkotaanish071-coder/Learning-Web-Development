@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissor Game</title>
+        <link rel = "stylesheet" href = "styles/10-rock-paper-scissor.css">
+    </head>
+    <body>
+
+        <div class = "main-name">
+            <p class = "title">Rock Paper Scissors</p>
+        </div>
+
+        <div class = "cmove">
+            <p>Choose a Move:</p>
+        </div>
+
+        <div class = "icons">
+
+            <div class = "icons">
+                <button onclick = "
+                    playGame('Rock');
+                " class = "move-button"><img src = "images/rock.png" class = "move-icon"></button>
+
+                <button onclick = "
+                    playGame('Paper');
+                " class = "move-button"><img src = "images/paper.png" class = "move-icon"></button>
+
+                <button onclick = "
+                    playGame('Scissor');
+                " class = "move-button"><img src = "images/scissor.png" class = "move-icon"></button>
+            </div>
+
+            <div class = "scoreb">
+                <p class = "js-score score"></p>
+            </div>
+
+        </div>
+
+        <div class = "score-data">
+            <p class = "js-moves moves"></p>
+        </div>
+
+        <div class = "score-data">
+            <p class = "js-result result"></p>
+        </div>
+
+        <div class = "score-data">
+            <button onclick = "
+                score.wins = 0;
+                score.losses = 0;
+                score.tie = 0;
+                localStorage.removeItem('score');
+                updateScore();
+            " class = "reset-score-button">Reset Score</button>
+        </div>
+
+        <script src = "scripts/10-rock-paper-scissor.js"></script>
+
+    </body>
+</html>
