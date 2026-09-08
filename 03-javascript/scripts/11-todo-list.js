@@ -1,7 +1,17 @@
-const todoList = ['make dinner', 'cook food'];
+const todoList = ['make dinner','cook food'];
 
-for(let i = 0; i < todoList.length; i++){
-    console.log(todoList[i]);
+rendertodo();
+function rendertodo(){
+
+    let todoHTML = '';
+
+    for(let i = 0; i < todoList.length; i++){
+        const todo = todoList[i];
+        const html = `<p>${todo}</p>`
+        todoHTML += html;
+    }
+
+    document.querySelector('.todo-js').innerHTML = todoHTML;
 }
 
 function addTodo(){
@@ -10,4 +20,5 @@ function addTodo(){
     todoList.push(name);
     console.log(todoList);
     inputElement.value = '';
+    rendertodo();
 }
