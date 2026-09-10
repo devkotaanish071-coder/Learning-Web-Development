@@ -53,6 +53,7 @@
             }
             */
 
+            /*
             let sum = 0;
             // console.log(typeof sum);
             const arr1 = [1,2,5];
@@ -67,6 +68,29 @@
                 array2.push(arr1[i]*2);
             }
             console.log(array2);
+            */
+
+            const array1 = [1, 2, 3];
+            const array2 = array1.slice();
+            array2.push(4);
+            console.log(array2);
+            console.log(array1);
+
+            const[fv, sv, tv] =[1, 2, 3];
+            console.log(fv);
+            console.log(sv);
+            console.log(tv);
+
+            for(let i = 1; i <=10; i++){
+                // console.log(i);
+                if(i === 3){
+                    continue;
+                }else if(i === 9){
+                    break;
+                }else{
+                    console.log(i);
+                }
+            }
         </script>
     </body>
 </html>

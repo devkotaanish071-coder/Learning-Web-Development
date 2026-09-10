@@ -14,7 +14,10 @@ function rendertodo(){
         // const {date} = todoObject;
         // const name = todoObject.name;
         // const date = todoObject.duedate;
-        const html = `<p>${name} ${duedate} <button onclick = "todoList.splice(${i},1); rendertodo();">Delete</button></p>`
+        const html = `
+        <div>${name}</div>
+        <div>${duedate}</div>
+        <button onclick = "todoList.splice(${i},1); rendertodo();" class = "todo-delete">Delete</button>`
         todoHTML += html;
     }
 
