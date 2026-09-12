@@ -8,6 +8,16 @@ function rendertodo(){
 
     let todoHTML = '';
 
+    todoList.forEach(function(todoObject, index){
+        const {name, duedate} = todoObject;
+        const html = `
+        <div>${name}</div>
+        <div>${duedate}</div>
+        <button onclick = "todoList.splice(${index},1); rendertodo();" class = "todo-delete">Delete</button>`
+        todoHTML += html;
+    });
+
+    /*
     for(let i = 0; i < todoList.length; i++){
         const todoObject = todoList[i];
         const {name, duedate} = todoObject;
@@ -20,6 +30,7 @@ function rendertodo(){
         <button onclick = "todoList.splice(${i},1); rendertodo();" class = "todo-delete">Delete</button>`
         todoHTML += html;
     }
+    */
 
     document.querySelector('.todo-js').innerHTML = todoHTML;
 }

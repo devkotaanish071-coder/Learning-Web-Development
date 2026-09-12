@@ -30,7 +30,7 @@ function playGame(playerMove){
     let result = '';
 
     if(playerMove === 'Scissor'){
-            if(computerMove === 'Rock'){
+        if(computerMove === 'Rock'){
             result = 'You Lose';
         }else if(computerMove ==='Paper'){
             result = 'You Win';
