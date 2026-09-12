@@ -8,7 +8,7 @@ function rendertodo(){
 
     let todoHTML = '';
 
-    todoList.forEach(function(todoObject, index){
+    todoList.forEach((todoObject, index) => {
         const {name, duedate} = todoObject;
         const html = `
         <div>${name}</div>

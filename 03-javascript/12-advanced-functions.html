@@ -49,6 +49,9 @@
             }, 3000)
             */
 
+
+            // For Each Loop
+            // Regular Function
             [
                 'make dishes',
                 'wash dishes',
@@ -57,6 +60,50 @@
                 console.log(m);
                 console.log(value);
             });
+
+            // Arrow Function
+            [
+                'make dishes',
+                'wash dishes',
+                'cook food'
+            ].forEach((value, m) => {
+                console.log(m);
+                console.log(value);
+            });
+
+            // Arrow Functions
+            const regularFunction = function(param){
+                console.log('Hi');
+                return 5;
+            };
+            regularFunction();
+
+            const arrowFunction = (param) => {
+                console.log('Hello');
+            };
+            arrowFunction();
+
+            // Only one Parameter passing through Arrow Fucntion can be Written as without Brackets
+            const oneParam = param => {
+                console.log(param + 1);
+            };
+            oneParam(4);
+
+            // One Line Arrow Function where returning a value no need to write return and Curly Brcaes
+            const oneLine = () => 2 + 6;
+            console.log(oneLine());
+
+            // Arrow Function inside Object
+            const object2 = {
+                // Arrow Function
+                method: () => {
+
+                },
+                // Shorthand Method Function
+                method(){
+
+                }
+            };
         </script>
     </body>
  </html>
