@@ -13,7 +13,8 @@ function rendertodo(){
         const html = `
         <div>${name}</div>
         <div>${duedate}</div>
-        <button onclick = "todoList.splice(${index},1); rendertodo();" class = "todo-delete">Delete</button>`
+        <button  
+            class = "todo-delete js-delete-todo">Delete</button>`
         todoHTML += html;
     });
 
@@ -33,7 +34,18 @@ function rendertodo(){
     */
 
     document.querySelector('.todo-js').innerHTML = todoHTML;
+    document.querySelectorAll(`.js-delete-todo`)
+        .forEach((deleteButton, index) => {
+            deleteButton.addEventListener(`click`,() => {
+                todoList.splice(index,1); rendertodo();
+            });
+    });
 }
+
+document.querySelector(`.js-add-todo`)
+    .addEventListener(`click`, () => {
+        addTodo();
+});
 
 function addTodo(){
     const inputElement = document.querySelector('.js-name-input');
