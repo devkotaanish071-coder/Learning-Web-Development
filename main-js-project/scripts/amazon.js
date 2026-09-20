@@ -35,6 +35,8 @@
 //   priceCents: 1899
 // }];
 
+import {cart} from '../data/cart.js ';
+
 let productsHtml = ''
 
 products.forEach((product) => {
@@ -62,7 +64,7 @@ products.forEach((product) => {
           </div>
 
           <div class="product-quantity-container">
-            <select>
+            <select class = "js-quantity-selector">
               <option selected value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
